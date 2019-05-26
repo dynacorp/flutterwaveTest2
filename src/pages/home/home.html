@@ -1,14 +1,95 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+<ion-header class="theme_background">
+    <div class="nav_header">
+      <div class="nav_header_title floatLeft">
+        <h5>Ride Finished</h5>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </ion-header>
+  
+  <ion-content padding>
+    <div class="rider_detail_wrapper">
+      <div class="rider_detail_banner">
+        <div class="rider_detail_left">
+          <div class="rider_detail_circle">
+              <img src="assets/imgs/ayo.jpg">
+          </div>
+          <div class="bottom_circle"></div>
+        </div>
+        <div class="rider_detail_right">
+          <h4>Created on</h4>
+          <h5>May 26, 2019</h5>
+          <p>Total Payment<br>
+          <strong>₦ 8,000</strong></p>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="rider_detail_content">
+        <div class="clear"></div>
+        <div class="download_list">
+            <ul>
+                <h6>Paying to</h6>
+              <li>
+                <ion-row class="p0">
+                  <ion-col col-1  class="p0">
+                      <span><img src="assets/imgs/ayo.jpg"></span>
+                  </ion-col>
+                  <ion-col col-11  class="p0">
+                      <div class="border_line">Driver Name: Ayomide Olopha
+                        </div>
+                  </ion-col>
+                </ion-row>
+                <div class="clear"></div>
+              </li>
+            </ul>
+        </div>
+        <div class="download_list">
+            <ul>
+                <h6>Transaction Details</h6>
+              <li>
+                <ion-row class="p0">
+                  <ion-col col-1>
+                      <img src="assets/imgs/leave.png">
+                  </ion-col>
+                  <ion-col col-11  class="p0">
+                    <span>22 Herbert Macurly, Yaba, Lagos.</span>
+                  </ion-col>
+                </ion-row>
+                <div class="clear"></div>
+              </li>
+              <hr>
+              <li>
+                  <ion-row class="p0">
+                      <ion-col col-1>
+                          <img src="assets/imgs/arrive.png">
+                      </ion-col>
+                    <ion-col col-11  class="p0">
+                      33 Iyanusi Street, Ikeja, Lagos
+                    </ion-col>
+                  </ion-row>
+                  <div class="clear"></div>
+              </li>
+              <hr>
+              <li>
+                  <ion-row class="p0">
+                    <ion-col col-6  class="p0">
+                      <strong>Payment Total</strong>
+                    </ion-col>
+                    <ion-col col-6 class="p0 textRight">
+                     <strong>₦ 8,000</strong>
+                    </ion-col>
+                  </ion-row>
+                  <div class="clear"></div>
+              </li>
+              <li>
+                  <div class="clear"></div>
+              </li>
+  
+            </ul>
+        </div>
+        <div class="textCenter" padding>
+          <button ion-button class="trach_detail_btn" (click)="pay()">Click to Pay</button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
